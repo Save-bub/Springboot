@@ -1,18 +1,29 @@
 package com.atguigu.springboot.bean;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Email;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+@PropertySource(value={"classpath:person.properties"})
 @Component
-@ConfigurationProperties(prefix = "person")
+@ConfigurationProperties(prefix = "person")               //将配置文件中的数据注入
+@Validated                                                  //数据校验
 public class Person {
+
+    //@Value("${person.name}")
+    //@Email                                                  //与@Validated配合使用指定name为Email格式
     private String name;
+   // @Value("#{11*2}")
     private Integer age;
+   // @Value("true")
     private Boolean boss;
     private Date birth;
     private Map<String,Object> maps;
