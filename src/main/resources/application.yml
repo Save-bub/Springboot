@@ -1,0 +1,15 @@
+#server:
+#  port: 8081
+#
+#person:
+#  age: 18
+#  boss: false
+#  birth: 2019/11/14
+#  maps: {s1: v1,s2: v2}
+#  lists:
+#    - lisi
+#    - zhaoliu
+#  dog:
+#    name: 小狗
+#    age: 2
+#  name: 是你蝶
