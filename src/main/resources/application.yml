@@ -1,5 +1,4 @@
-#server:
-#  port: 8081
+
 #
 #person:
 #  age: 18
@@ -13,3 +12,19 @@
 #    name: 小狗
 #    age: 2
 #  name: 是你蝶
+#spring:
+#  profiles:
+#    active: dev
+#server:
+#  port: 8081
+#
+#---
+#server:
+#  port: 8083
+#spring:
+#  profiles: dev
+#---
+#server:
+#  port: 84
+#spring:
+#  profiles: prod
