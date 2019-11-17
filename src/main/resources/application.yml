@@ -28,3 +28,8 @@
 #  port: 84
 #spring:
 #  profiles: prod
+#logging:
+#  level:
+#    com:
+#      atguigu: trace
+#  file: Springboot.log
